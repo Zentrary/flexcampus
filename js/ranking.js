@@ -75,4 +75,9 @@ function listItem(it, rank) {
   return row
 }
 
-document.addEventListener('DOMContentLoaded', ()=>{ applySessionHeader(); loadRanking() })
+document.addEventListener('DOMContentLoaded', ()=>{
+  const s = getSession();
+  if (!s || !s.token) { location.href = './login.html'; return }
+  applySessionHeader();
+  loadRanking()
+})

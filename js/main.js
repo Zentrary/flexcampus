@@ -558,4 +558,10 @@ document.addEventListener('DOMContentLoaded', () => {
     animate();
     buildBanner();
     applySessionHeader()
+    ;(function(){
+        let s=null;try{s=JSON.parse(localStorage.getItem('ptu_session')||'null')}catch{}
+        if(!s||!s.token){
+            document.querySelectorAll('a[href$="ranking.html"]').forEach(a=>a.style.display='none')
+        }
+    })()
 })

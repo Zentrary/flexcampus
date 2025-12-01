@@ -12088,3 +12088,19 @@
 {"time":"2025-11-29T20:39:28.953Z","level":"INFO","message":"Request start GET /api/jobs","meta":{"id":"l5ojly"}}
 {"time":"2025-11-29T20:39:28.983Z","level":"INFO","message":"Request end GET /api/auth/me status=304 duration=36ms","meta":{"id":"7cw11f"}}
 {"time":"2025-11-29T20:39:28.986Z","level":"INFO","message":"Request end GET /api/jobs status=200 duration=34ms","meta":{"id":"l5ojly"}}
+{"time":"2025-12-01T00:39:41.455Z","level":"INFO","message":"Server starting"}
+{"time":"2025-12-01T00:39:41.455Z","level":"INFO","message":"Connecting to MongoDB"}
+{"time":"2025-12-01T00:39:42.940Z","level":"INFO","message":"MongoDB connected (db=University)"}
+{"time":"2025-12-01T00:39:42.942Z","level":"INFO","message":"Database status: connected (University)"}
+{"time":"2025-12-01T00:39:42.948Z","level":"INFO","message":"Web available at http://localhost:5174/"}
+{"time":"2025-12-01T00:39:42.950Z","level":"INFO","message":"LAN address: http://192.168.1.114:5174/"}
+{"time":"2025-12-01T00:39:42.982Z","level":"INFO","message":"API listening on http://0.0.0.0:5174"}
+{"time":"2025-12-01T00:39:43.609Z","level":"INFO","message":"Request start GET /api/jobs/top-liked?limit=6","meta":{"id":"u3ehzb"}}
+{"time":"2025-12-01T00:39:43.618Z","level":"INFO","message":"Request end GET /api/jobs/top-liked?limit=6 status=500 duration=10ms","meta":{"id":"u3ehzb"}}
+{"time":"2025-12-01T00:39:43.621Z","level":"INFO","message":"Request start GET /api/auth/me","meta":{"id":"i8b4n4"}}
+{"time":"2025-12-01T00:39:43.627Z","level":"INFO","message":"Request end GET /api/auth/me status=401 duration=6ms","meta":{"id":"i8b4n4"}}
+{"time":"2025-12-01T00:39:43.642Z","level":"INFO","message":"Request start GET /api/jobs","meta":{"id":"n5t6le"}}
+{"time":"2025-12-01T00:39:43.683Z","level":"INFO","message":"Request end GET /api/jobs status=200 duration=41ms","meta":{"id":"n5t6le"}}
+{"time":"2025-12-01T00:39:43.702Z","level":"INFO","message":"Request start GET /favicon.ico","meta":{"id":"ffbds0"}}
+{"time":"2025-12-01T00:39:43.704Z","level":"WARN","message":"Route not found GET /favicon.ico"}
+{"time":"2025-12-01T00:39:43.706Z","level":"INFO","message":"Request end GET /favicon.ico status=404 duration=3ms","meta":{"id":"ffbds0"}}
