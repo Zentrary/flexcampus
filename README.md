@@ -79,10 +79,5 @@ ADMIN_PASSWORD=changeme
 - ดีบัก/สุขภาพระบบ
   - `GET /health`, `GET /api/debug/users-count`, `GET /api/debug/users`
 
-## ดีพลอยฟรีอย่างรวดเร็ว
-- GitHub Pages: เปิด `Settings → Pages` แล้วตั้ง Source เป็นสาขา `main` โฟลเดอร์ `root`
-- Cloudflare Pages: `Developer Platform → Pages → Create a project → Upload assets` เลือกโฟลเดอร์โปรเจกต์
-- Netlify/Vercel: สร้างไซต์ใหม่แล้วเลือกดีพลอยแบบสแตติก (Output directory เป็น `.`)
-
 ## ใบอนุญาต
 - โปรเจกต์เพื่อการศึกษา/ตัวอย่าง คุณสามารถปรับใช้ตามต้องการ
