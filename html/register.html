@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>สมัครสมาชิก – FlexCampus</title>
+      <link rel="stylesheet" href="../css/auth.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea"></div>
+         </div>
+      </header>
+      <div class="wrap">
+         <div class="card">
+            <h1 class="title">สมัครสมาชิก</h1>
+            <p class="muted">
+               กรอกข้อมูลโปรไฟล์ให้ครบถ้วน เพื่อรับข้อเสนองานที่เหมาะกับคุณ
+            </p>
+            <div class="form-grid">
+               <div class="field">
+                  <label>ชื่อ</label
+                  ><input
+                     id="firstName"
+                     type="text"
+                     placeholder="เช่น ธีรภัทร"
+                  /><span class="hint">ชื่อจริงของคุณ</span>
+               </div>
+               <div class="field">
+                  <label>นามสกุล</label
+                  ><input
+                     id="lastName"
+                     type="text"
+                     placeholder="เช่น วัฒนพงศ์"
+                  /><span class="hint">นามสกุลจริง</span>
+               </div>
+               <div class="field">
+                  <label>ชื่อผู้ใช้</label
+                  ><input
+                     id="username"
+                     type="text"
+                     placeholder="เช่น timkub"
+                  /><span class="hint">ใช้อักษรหรือตัวเลข 4 ตัวขึ้นไป</span>
+               </div>
+               <div class="field">
+                  <label>อีเมล</label
+                  ><input
+                     id="email"
+                     type="email"
+                     placeholder="name@example.com"
+                  /><span class="hint">อีเมลสำหรับเข้าสู่ระบบและรับข้อมูล</span>
+               </div>
+               <div class="field">
+                  <label>เบอร์โทร</label
+                  ><input
+                     id="phone"
+                     type="tel"
+                     placeholder="เช่น 0812345678"
+                  /><span class="hint">กรอกตัวเลข 9–10 หลัก</span>
+               </div>
+               <div class="field">
+                  <label>อายุ</label
+                  ><input
+                     id="age"
+                     type="number"
+                     min="15"
+                     max="65"
+                     placeholder="เช่น 20"
+                  /><span class="hint">ช่วงที่รองรับ 15–65 ปี</span>
+               </div>
+               <div class="field" style="grid-column: 1 / -1">
+                  <label>รหัสผ่าน</label>
+                  <div class="control">
+                     <input
+                        id="password"
+                        type="password"
+                        placeholder="อย่างน้อย 8 ตัวอักษร"
+                     /><button
+                        type="button"
+                        class="toggle-pass"
+                        id="toggleRegisterPass"
+                     >
+                        แสดง
+                     </button>
+                  </div>
+               </div>
+               <div class="field" style="grid-column: 1 / -1">
+                  <label>ยืนยันรหัสผ่าน</label>
+                  <div class="control">
+                     <input
+                        id="confirm"
+                        type="password"
+                        placeholder="พิมพ์ซ้ำอีกครั้ง"
+                     /><button
+                        type="button"
+                        class="toggle-pass"
+                        id="toggleRegisterConfirm"
+                     >
+                        แสดง
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="actions">
+               <a class="btn btn-ghost" href="login.html"
+                  >มีบัญชีแล้ว? เข้าสู่ระบบ</a
+               >
+               <button id="registerBtn" class="btn btn-primary">
+                  สมัครสมาชิก
+               </button>
+            </div>
+            <div id="err" class="error" style="display: none"></div>
+         </div>
+      </div>
+      <script src="../js/register.js" defer></script>
+   </body>
+</html>

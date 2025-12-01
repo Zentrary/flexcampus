@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>สมัครเป็นผู้ประกอบการ – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea"></div>
+         </div>
+      </header>
+      <section class="hero">
+         <div class="container hero-inner">
+            <h1>สมัครเป็นผู้ประกอบการ</h1>
+            <p>
+               กรอกข้อมูลเพื่อขออนุมัติเป็นผู้ประกอบการ
+               สามารถโพสต์งานได้หลังได้รับการอนุมัติ
+            </p>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="form-card shadow-xl">
+               <div class="form-grid">
+                  <div class="field">
+                     <label>ชื่อองค์กร/ร้าน</label
+                     ><input
+                        class="input"
+                        id="orgName"
+                        type="text"
+                        placeholder="เช่น Nivora Café"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>เบอร์โทรติดต่อ</label
+                     ><input
+                        class="input"
+                        id="contactPhone"
+                        type="tel"
+                        placeholder="เช่น 0812345678"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>ลิงก์ผลงาน/เพจ</label
+                     ><input
+                        class="input"
+                        id="portfolioUrl"
+                        type="url"
+                        placeholder="เช่น https://example.com"
+                     />
+                  </div>
+                  <div class="field wide">
+                     <label>คำอธิบายองค์กร</label
+                     ><textarea
+                        class="textarea"
+                        id="description"
+                        rows="4"
+                        placeholder="เล่าเกี่ยวกับธุรกิจและบริการ"
+                     ></textarea>
+                  </div>
+                  <div class="field wide">
+                     <label>เหตุผลในการสมัคร</label
+                     ><textarea
+                        class="textarea"
+                        id="reason"
+                        rows="4"
+                        placeholder="เหตุผลและประเภทงานที่จะโพสต์"
+                     ></textarea>
+                  </div>
+               </div>
+               <div class="actions" style="justify-content: flex-end">
+                  <a id="applyBtn" class="logout-btn" href="#"
+                     >ส่งคำขอสมัครเป็นผู้ประกอบการ</a
+                  >
+                  <div id="err" class="meta" style="color: #ef4444"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+         </div>
+      </footer>
+      <script src="../js/employer-apply.js" defer></script>
+   </body>
+</html>

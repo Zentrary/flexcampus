@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>สถานะการสมัครงานของฉัน – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea">
+               <a class="btn btn-outline" href="./register.html">สมัครสมาชิก</a>
+               <a class="btn" href="./login.html">เข้าสู่ระบบ</a>
+            </div>
+         </div>
+      </header>
+      <section class="hero">
+         <div class="container hero-inner">
+            <h1>สถานะการสมัครงานของฉัน</h1>
+            <p class="hero-sub">ติดตามใบสมัครงานทั้งหมดของคุณ</p>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div
+               id="empStatusBox"
+               class="card shadow"
+               style="margin-bottom: 16px; display: none"
+            >
+               <h3>สถานะการสมัครผู้ประกอบการ</h3>
+               <div id="empStepper" class="stepper"></div>
+            </div>
+            <h2 class="section-title">สถานะใบสมัครงาน</h2>
+            <div id="appsSummary" class="grid" style="margin-bottom: 8px"></div>
+            <h2 class="section-title">กล่องข้อความล่าสุด</h2>
+            <div id="msgGrid" class="grid"></div>
+            <hr class="divider" />
+            <div id="appsGrid" class="grid" data-animate></div>
+            <div id="appsLoader" class="load-area" style="display: none">
+               <div class="loader" title="กำลังโหลด"></div>
+            </div>
+            <div id="err" class="meta err-text"></div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+         </div>
+      </footer>
+      <script src="../js/user-dashboard.js" defer></script>
+   </body>
+</html>

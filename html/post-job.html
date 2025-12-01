@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>โพสต์งาน – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea">
+               <a class="btn" href="./login.html">เข้าสู่ระบบ</a>
+            </div>
+         </div>
+      </header>
+      <section class="hero">
+         <div class="container hero-inner">
+            <h1>โพสต์งานใหม่</h1>
+            <p class="hero-sub">
+               สำหรับผู้ประกอบการเท่านั้น เพิ่มข้อมูลให้ครบเพื่อดึงดูดผู้สมัคร
+            </p>
+            <div class="post-wrap shadow-xl">
+               <div class="card post-card">
+                  <div class="form-grid compact">
+                     <div class="field wide">
+                        <label>ชื่องาน</label>
+                        <small class="help"
+                           >ระบุชื่อที่ชัดเจน เช่น งาน + รูปแบบ + ระดับ</small
+                        >
+                        <input
+                           id="title"
+                           class="input"
+                           type="text"
+                           placeholder="เช่น ผู้ช่วยขายออนไลน์ (รีโมท)"
+                        />
+                     </div>
+                     <div class="field">
+                        <label>หมวดหมู่</label>
+                        <small class="help"
+                           >ใช้เพื่อจัดกลุ่มและช่วยให้ค้นพบ</small
+                        >
+                        <select id="category" class="input">
+                           <option value="popular">งานยอดนิยม</option>
+                           <option value="graphic">ออกแบบกราฟิก</option>
+                           <option value="tech">เว็บไซต์และเทคโนโลยี</option>
+                           <option value="edu">เรียนพิเศษ</option>
+                           <option value="media">ภาพและเสียง</option>
+                           <option value="marketing">การตลาดและโฆษณา</option>
+                           <option value="writing">เขียนและแปลภาษา</option>
+                           <option value="engineer">สถาปัตย์และวิศวกรรม</option>
+                           <option value="lifestyle">ไลฟ์สไตล์</option>
+                           <option value="business">ธุรกิจและที่ปรึกษา</option>
+                        </select>
+                     </div>
+                     <div class="field">
+                        <label>ค่าจ้าง</label>
+                        <small class="help">ตัวเลขเรตพื้นฐาน</small>
+                        <input
+                           id="rate"
+                           class="input"
+                           type="number"
+                           min="0"
+                           step="1"
+                           placeholder="เช่น 100"
+                        />
+                     </div>
+                     <div class="field">
+                        <label>หน่วยค่าจ้าง</label>
+                        <small class="help">เช่น บาท/ชม., บาท/งาน</small>
+                        <input
+                           id="unit"
+                           class="input"
+                           type="text"
+                           placeholder="บาท/ชม."
+                        />
+                     </div>
+                     <div class="field">
+                        <label>ประเภทงาน</label>
+                        <small class="help">เช่น รีโมท, กะ, นัดหมาย</small>
+                        <input
+                           id="type"
+                           class="input"
+                           type="text"
+                           placeholder="รีโมท"
+                        />
+                     </div>
+                     <div class="field">
+                        <label>จำนวนตำแหน่งที่ต้องการ</label>
+                        <small class="help">ตัวเลขขั้นต่ำ 1</small>
+                        <input
+                           id="positions"
+                           class="input"
+                           type="number"
+                           min="1"
+                           step="1"
+                           placeholder="เช่น 3"
+                        />
+                     </div>
+                     <div class="field wide">
+                        <label>แท็ก</label>
+                        <small class="help"
+                           >ใส่ 2–5 คำ คั่นด้วยเครื่องหมายจุลภาค</small
+                        >
+                        <input
+                           id="tags"
+                           class="input"
+                           type="text"
+                           placeholder="รีโมท, ยืดหยุ่น"
+                        />
+                     </div>
+                     <div class="field wide">
+                        <label>คำอธิบายงาน</label>
+                        <small class="help"
+                           >บอกหน้าที่ ความคาดหวัง เวลา และข้อกำหนด</small
+                        >
+                        <textarea
+                           id="desc"
+                           class="textarea"
+                           rows="5"
+                           placeholder="รายละเอียดและขอบเขตงาน เช่น งานที่ต้องทำ, เวลา, รูปแบบ และคุณสมบัติ"
+                        ></textarea>
+                     </div>
+                  </div>
+                  <div id="err" class="meta err-text"></div>
+                  <div class="card-actions" style="justify-content: flex-end">
+                     <button id="postBtn" class="btn">โพสต์งาน</button>
+                  </div>
+               </div>
+               <div class="preview-card card shadow">
+                  <div class="preview-title" id="pv_title">ตัวอย่างชื่องาน</div>
+                  <div class="preview-meta" id="pv_meta">
+                     0 บาท/ชม. • ยืดหยุ่น
+                  </div>
+                  <div class="preview-tags" id="pv_tags"></div>
+                  <div class="preview-desc" id="pv_desc"></div>
+                  <div class="preview-note">
+                     ตัวอย่างการแสดงผลบนหน้ารายการงาน
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+            <div class="socials">
+               <img src="../images/logo/Facebook_icon.png" alt="facebook" />
+               <img src="../images/logo/Instagram_icon.png" alt="instagram" />
+               <img src="../images/logo/Line_icon.png" alt="line" />
+            </div>
+         </div>
+      </footer>
+      <script src="../js/post-job.js"></script>
+   </body>
+</html>

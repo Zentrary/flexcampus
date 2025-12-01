@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>โปรไฟล์ผู้ใช้ – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea"></div>
+         </div>
+      </header>
+      <section class="hero">
+         <div class="container hero-inner">
+            <h1>โปรไฟล์ผู้ใช้</h1>
+            <p>แก้ไขได้เฉพาะ เบอร์โทร อีเมล และชื่อผู้ใช้</p>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="form-card shadow-xl">
+               <div class="form-grid">
+                  <div class="field">
+                     <label>ชื่อ</label
+                     ><input
+                        class="input"
+                        id="firstName"
+                        type="text"
+                        disabled
+                     />
+                  </div>
+                  <div class="field">
+                     <label>นามสกุล</label
+                     ><input class="input" id="lastName" type="text" disabled />
+                  </div>
+                  <div class="field">
+                     <label>บทบาท</label
+                     ><input class="input" id="role" type="text" disabled />
+                  </div>
+                  <div class="field">
+                     <label>อีเมล</label
+                     ><input
+                        class="input"
+                        id="email"
+                        type="email"
+                        placeholder="example@mail.com"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>เบอร์โทร</label
+                     ><input
+                        class="input"
+                        id="phone"
+                        type="tel"
+                        placeholder="0812345678"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>ชื่อผู้ใช้</label
+                     ><input
+                        class="input"
+                        id="username"
+                        type="text"
+                        placeholder="username"
+                     />
+                  </div>
+               </div>
+               <div class="actions" style="justify-content: flex-end">
+                  <button id="saveBtn" class="logout-btn">
+                     บันทึกการเปลี่ยนแปลง
+                  </button>
+                  <div id="err" class="meta" style="color: #ef4444"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+         </div>
+      </footer>
+      <script src="../js/profile.js" defer></script>
+   </body>
+</html>

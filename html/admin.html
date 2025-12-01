@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>แผงควบคุมแอดมิน – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css">
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea"></div>
+         </div>
+      </header>
+      <section class="hero">
+         <div class="container hero-inner">
+            <h1>แผงควบคุมแอดมิน</h1>
+            <p>ดูสถิติและจัดการคำขอสมัครเป็นผู้ประกอบการ</p>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+               <div class="card shadow">
+                  <h3>ผู้ใช้</h3>
+                  <div class="meta" id="statUsers">-</div>
+               </div>
+               <div class="card shadow">
+                  <h3>ผู้ประกอบการ</h3>
+                  <div class="meta" id="statEmployers">-</div>
+               </div>
+               <div class="card shadow">
+                  <h3>แอดมิน</h3>
+                  <div class="meta" id="statAdmins">-</div>
+               </div>
+            </div>
+            <div class="tabs" style="margin-top:16px">
+               <button class="tab-btn active" data-tab="apps">สมัคร ผู้ประกอบการ</button>
+               <button class="tab-btn" data-tab="jobs">รายชื่องานต่างๆ</button>
+            </div>
+            <div id="tab-apps" class="tab-pane">
+               <div id="appsList" class="grid" style="grid-template-columns:1fr 1fr 1fr"></div>
+               <div id="appsEmpty" class="meta" style="display:none">ยังไม่มีคำขอ</div>
+            </div>
+            <div id="tab-jobs" class="tab-pane" style="display:none">
+               <div id="jobsList" class="grid" style="grid-template-columns:1fr 1fr 1fr"></div>
+               <div id="jobsEmpty" class="meta" style="display:none">ยังไม่มีงาน</div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+            <div>© 2025 FlexCampus</div>
+         </div>
+      </footer>
+      <script src="../js/admin.js" defer></script>
+   </body>
+</html>

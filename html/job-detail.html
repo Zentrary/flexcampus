@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>รายละเอียดงาน – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea">
+               <a class="btn" href="./login.html">เข้าสู่ระบบ</a>
+            </div>
+         </div>
+      </header>
+      <section class="hero detail-hero">
+         <div class="container hero-inner" id="detail">
+            <h1 id="title">กำลังโหลด...</h1>
+            <div class="card detail-card shadow">
+               <div class="detail-top">
+                  <div class="detail-meta meta" id="meta"></div>
+                  <div class="tags detail-tags" id="tags"></div>
+               </div>
+               <div class="kv-grid">
+                  <div class="kv-item">
+                     <div class="kv-head">หมวดหมู่</div>
+                     <div class="kv-value" id="kv_category">-</div>
+                  </div>
+                  <div class="kv-item">
+                     <div class="kv-head">เรต/หน่วย</div>
+                     <div class="kv-value" id="kv_rate">-</div>
+                  </div>
+                  <div class="kv-item">
+                     <div class="kv-head">ประเภทงาน</div>
+                     <div class="kv-value" id="kv_type">-</div>
+                  </div>
+               </div>
+               <div class="divider"></div>
+               <div class="tabs">
+                  <button class="tab-btn active" data-tab="tab-desc">
+                     รายละเอียดงาน
+                  </button>
+                  <button class="tab-btn" data-tab="tab-req">คุณสมบัติ</button>
+                  <button class="tab-btn" data-tab="tab-how">วิธีสมัคร</button>
+               </div>
+               <div class="tab-pane" id="tab-desc">
+                  <div class="detail-desc" id="desc">กำลังโหลด...</div>
+               </div>
+               <div class="tab-pane" id="tab-req" style="display: none">
+                  <ul class="compare-list" id="reqList"></ul>
+               </div>
+               <div class="tab-pane" id="tab-how" style="display: none">
+                  <div class="detail-desc" id="howto">
+                     กดปุ่ม “สมัครเลย” แล้วกรอกข้อมูลส่วนตัวเพื่อส่งใบสมัคร
+                     โดยไม่จำเป็นต้องเข้าสู่ระบบ
+                  </div>
+               </div>
+               <div class="info-title" style="text-align: left">
+                  งานที่ใกล้เคียง
+               </div>
+               <div class="mini-grid" id="related"></div>
+               <div
+                  class="form-grid"
+                  id="editForm"
+                  style="display: none; margin-top: 12px"
+               >
+                  <div class="field wide">
+                     <label>ชื่องาน</label
+                     ><input id="f_title" class="input" type="text" />
+                  </div>
+                  <div class="field">
+                     <label>หมวดหมู่</label
+                     ><input id="f_category" class="input" type="text" />
+                  </div>
+                  <div class="field">
+                     <label>ค่าจ้าง</label
+                     ><input
+                        id="f_rate"
+                        class="input"
+                        type="number"
+                        min="0"
+                        step="1"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>หน่วย</label
+                     ><input id="f_unit" class="input" type="text" />
+                  </div>
+                  <div class="field">
+                     <label>ประเภท</label
+                     ><input id="f_type" class="input" type="text" />
+                  </div>
+                  <div class="field wide">
+                     <label>แท็ก</label
+                     ><input id="f_tags" class="input" type="text" />
+                  </div>
+                  <div class="field wide">
+                     <label>คำอธิบายงาน</label
+                     ><textarea
+                        id="f_desc"
+                        class="textarea"
+                        rows="5"
+                     ></textarea>
+                  </div>
+               </div>
+               <div id="err" class="meta" style="color: #ef4444"></div>
+               <div class="card-actions" id="actions"></div>
+            </div>
+         </div>
+      </section>
+      <section class="extras">
+         <div class="container">
+            <div class="extras-grid">
+               <div class="extras-card">
+                  <b>สวัสดิการ</b>
+                  <div class="meta">มีโบนัสผลงาน / เวลายืดหยุ่น</div>
+               </div>
+               <div class="extras-card">
+                  <b>รูปแบบงาน</b>
+                  <div class="meta">ทำงานรีโมท / นัดหมายตามตกลง</div>
+               </div>
+               <div class="extras-card">
+                  <b>สิ่งที่ได้เรียนรู้</b>
+                  <div class="meta">ทักษะสื่อสาร / การจัดการเวลา</div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+            <div class="socials">
+               <a
+                  href="https://www.facebook.com/Timmy.org/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Facebook"
+                  ><img src="../images/logo/Facebook_icon.png" alt="facebook"
+               /></a>
+               <a
+                  href="https://www.instagram.com/chier.pl/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Instagram"
+                  ><img src="../images/logo/Instagram_icon.png" alt="instagram"
+               /></a>
+               <a
+                  href="https://github.com/Zentrary"
+                  target="_blank"
+                  rel="noopener"
+                  title="GitHub"
+                  ><img src="../images/logo/github.png" alt="github"
+               /></a>
+               <a
+                  href="https://line.me/R/ti/p/@timkub.pl"
+                  target="_blank"
+                  rel="noopener"
+                  title="Line timkub.pl"
+                  ><img src="../images/logo/Line_icon.png" alt="line"
+               /></a>
+               <a href="tel:0947859322" title="โทร 094-785-9322"
+                  >094-785-9322</a
+               >
+            </div>
+         </div>
+      </footer>
+      <script src="../js/job-detail.js"></script>
+   </body>
+</html>

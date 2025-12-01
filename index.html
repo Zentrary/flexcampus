@@ -1,0 +1,140 @@
+ <!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlexCampus – งานพาร์ทไทม์สำหรับนักศึกษา</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="./" class="brand"><span>FlexCampus</span></a>
+      <nav class="nav-links">
+        <a href="./">หน้าแรก</a>
+        <a href="html/jobs.html">งานทั้งหมด</a>
+        <a href="html/ranking.html">อันดับผู้ประกอบการ</a>
+      </nav>
+      <div class="nav-cta" id="userArea">
+        <a class="btn btn-outline" href="html/register.html">สมัครสมาชิก</a>
+        <a class="btn" href="html/login.html">เข้าสู่ระบบ</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1 data-animate>งานพาร์ทไทม์สำหรับนักศึกษา</h1>
+      <p data-animate>รวมงานที่ยืดหยุ่น เลือกให้เหมาะกับตารางเรียนของคุณ</p>
+      <div class="search-card shadow-xl" data-animate>
+        <div class="search-row">
+          <div class="search-input"><input id="q" type="text" placeholder="ค้นหางาน เช่น เช็ค, บริการ, ออกแบบ"></div>
+          <button id="searchBtn" class="btn">ค้นหา</button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="section banner">
+    <div class="container">
+      <div class="banner-slider" data-animate>
+        <div class="banner-track" id="bannerTrack"></div>
+        <div class="banner-dots" id="bannerDots"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="cats">
+    <div class="container">
+      <h2 data-animate>หมวดหมู่ยอดนิยม</h2>
+      <div class="carousel" data-animate>
+        <button class="arrow left" id="leftCat">‹</button>
+        <div class="scroll" id="catScroll"></div>
+        <button class="arrow right" id="rightCat">›</button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="jobs">
+    <div class="container">
+      <h2 data-animate>งานยอดถูกใจ</h2>
+      <div class="grid" id="jobGrid" data-animate></div>
+      <div id="jobsLoader" class="load-area" style="display:none"><div class="loader" title="กำลังโหลด"></div></div>
+      <section class="section platform" id="platform">
+        <div class="container" data-animate>
+          <h2>แพลตฟอร์มจ้างงานและบริการครบวงจร</h2>
+          <p>พื้นที่เดียวที่ช่วยให้นักศึกษาและผู้ว่าจ้างพบกันได้ง่ายขึ้น ค้นหา จ้างงาน และติดตามงานได้อย่างชัดเจน พร้อมระบบที่เรียบง่าย ไม่ซับซ้อน และเหมาะกับการใช้งานทุกวัน</p>
+          <div class="platform-grid">
+            <div class="platform-card">
+              <img src="images/job/เว็บไซต์และเทคโนโลยี.svg" alt="ค้นหางาน">
+              <div><b>ค้นหางานสะดวก</b><span>กรองตามหมวดหมู่และคำค้นหา พร้อมตัวอย่างงานชัดเจน</span></div>
+            </div>
+            <div class="platform-card">
+              <img src="images/job/ธุรกิจและที่ปรึกษา.svg" alt="จ้างงานง่าย">
+              <div><b>จ้างงานง่าย</b><span>เริ่มต้นคุย ตกลงเงื่อนไข และส่งมอบงานได้ในที่เดียว</span></div>
+            </div>
+            <div class="platform-card">
+              <img src="images/job/งานยอดนิยม.svg" alt="ติดตามงาน">
+              <div><b>ติดตามงานชัดเจน</b><span>ดูสถานะงานและประวัติการทำงานเพื่อความสบายใจทั้งสองฝ่าย</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section compare" id="compare">
+        <div class="container" data-animate>
+          <h2 class="compare-title">เรามีร้านค้าคุณภาพมากมาย และผู้ประกอบการมืออาชีพคอยให้บริการ</h2>
+          <div class="compare-grid">
+            <div class="compare-card">
+              <img class="compare-img" src="images/compare1.svg" alt="Freelancer">
+              <div class="compare-head">
+                <span class="compare-badge">Freelancer</span>
+                <h3>ฟรีแลนซ์</h3>
+              </div>
+              <ul class="compare-list">
+                <li>พร้อมเริ่มงาน ยืดหยุ่นตามตารางเรียน</li>
+                <li>โปรไฟล์งานและทักษะชัดเจน</li>
+                <li>สื่อสารง่าย ตกลงเงื่อนไขได้รวดเร็ว</li>
+              </ul>
+            </div>
+            <div class="compare-card">
+              <img class="compare-img" src="images/compare2.svg" alt="ผู้เชี่ยวชาญ">
+              <div class="compare-head">
+                <span class="compare-badge compare-secondary">ผู้เชี่ยวชาญ</span>
+                <h3>ผู้เชี่ยวชาญ</h3>
+              </div>
+              <ul class="compare-list">
+                <li>ผ่านการคัดกรองเบื้องต้น</li>
+                <li>มีพอร์ตงานและรีวิวจากผู้ว่าจ้าง</li>
+                <li>เหมาะกับงานเฉพาะทางและงานคุณภาพ</li>
+              </ul>
+            </div>
+            <div class="compare-card">
+              <img class="compare-img" src="images/compare3.svg" alt="Professional">
+              <div class="compare-head">
+                <span class="compare-badge compare-tertiary">Professional</span>
+                <h3>Professional</h3>
+              </div>
+              <ul class="compare-list">
+                <li>ทักษะสูง จัดการงานซับซ้อนได้ดี</li>
+                <li>มาตรฐานงานมืออาชีพและส่งมอบตรงเวลา</li>
+                <li>เหมาะกับงานโครงการและงานที่ต้องการคุณภาพ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>© 2025 FlexCampus</div>
+      <div class="socials">
+        <a href="https://www.facebook.com/Timmy.org/" target="_blank" rel="noopener" title="Facebook"><img src="images/logo/Facebook_icon.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/chier.pl/" target="_blank" rel="noopener" title="Instagram"><img src="images/logo/Instagram_icon.png" alt="instagram"></a>
+        <a href="https://github.com/Zentrary" target="_blank" rel="noopener" title="GitHub"><img src="images/logo/github.png" alt="github"></a>
+        <a href="https://line.me/R/ti/p/@timkub.pl" target="_blank" rel="noopener" title="Line timkub.pl"><img src="images/logo/Line_icon.png" alt="line"></a>
+        <a href="tel:0947859322" title="โทร 094-785-9322">094-785-9322</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>เข้าสู่ระบบ – FlexCampus</title>
+      <link rel="stylesheet" href="../css/auth.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea"></div>
+         </div>
+      </header>
+      <div class="wrap">
+         <div class="card">
+            <h1 class="title">เข้าสู่ระบบ</h1>
+            <p class="muted">เข้าถึงฟีเจอร์สมัครงานและบันทึกรายการโปรด</p>
+            <div class="form-grid">
+               <div class="field" style="grid-column: 1 / -1">
+                  <label>อีเมลหรือชื่อผู้ใช้</label
+                  ><input
+                     id="identity"
+                     type="text"
+                     placeholder="name@example.com หรือ timkub"
+                  />
+               </div>
+               <div class="field" style="grid-column: 1 / -1">
+                  <label>รหัสผ่าน</label>
+                  <div class="control">
+                     <input
+                        id="password"
+                        type="password"
+                        placeholder="อย่างน้อย 8 ตัวอักษร"
+                     /><button
+                        type="button"
+                        class="toggle-pass"
+                        id="toggleLoginPass"
+                     >
+                        แสดง
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="actions">
+               <a class="btn btn-ghost" href="register.html">สมัครสมาชิก</a>
+               <button id="loginBtn" class="btn btn-primary">
+                  เข้าสู่ระบบ
+               </button>
+            </div>
+            <div class="row" style="margin: 4px 0 0">
+               <a href="error.html">ลืมรหัสผ่าน</a>
+            </div>
+            <div id="err" class="error" style="display: none"></div>
+         </div>
+      </div>
+      <script src="../js/login.js" defer></script>
+   </body>
+</html>

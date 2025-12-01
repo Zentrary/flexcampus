@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>สถานะใบสมัคร – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea">
+               <a class="btn" href="./login.html">เข้าสู่ระบบ</a>
+            </div>
+         </div>
+      </header>
+      <section class="hero detail-hero">
+         <div class="container hero-inner">
+            <h1>สถานะใบสมัคร</h1>
+            <div class="card detail-card shadow">
+               <div class="meta" id="jobInfo">กำลังโหลด...</div>
+               <div class="divider"></div>
+               <div class="stat-grid">
+                  <div class="stat-card">
+                     <div class="stat-value" id="stStatus">-</div>
+                     <div class="stat-label">สถานะ</div>
+                  </div>
+                  <div class="stat-card">
+                     <div class="stat-value" id="stWhen">-</div>
+                     <div class="stat-label">วันที่สมัคร</div>
+                  </div>
+                  <div class="stat-card">
+                     <div class="stat-value" id="stCode">-</div>
+                     <div class="stat-label">รหัสติดตาม</div>
+                  </div>
+               </div>
+               <div class="info-title" style="margin-top: 14px">
+                  กล่องข้อความ
+               </div>
+               <div class="info-grid" id="msgList"></div>
+               <div id="err" class="meta" style="color: #ef4444"></div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+         </div>
+      </footer>
+      <script src="../js/check-application.js" defer></script>
+   </body>
+   <style></style>
+</html>

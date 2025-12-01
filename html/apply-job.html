@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="th">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>สมัครงาน – FlexCampus</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a href="../index.html" class="brand"><span>FlexCampus</span></a>
+            <nav class="nav-links">
+               <a href="../index.html">หน้าแรก</a>
+               <a href="./jobs.html">งานทั้งหมด</a>
+               <a href="./ranking.html">อันดับผู้ประกอบการ</a>
+            </nav>
+            <div class="nav-cta" id="userArea">
+               <a class="btn" href="./login.html">เข้าสู่ระบบ</a>
+            </div>
+         </div>
+      </header>
+      <section class="hero detail-hero">
+         <div class="container hero-inner">
+            <h1 id="jobTitle">สมัครงาน</h1>
+            <div class="card detail-card shadow">
+               <div class="detail-top">
+                  <div class="detail-meta meta" id="jobMeta"></div>
+                  <div class="tags detail-tags" id="jobTags"></div>
+               </div>
+               <div class="kv-grid">
+                  <div class="kv-item">
+                     <div class="kv-head">หมวดหมู่</div>
+                     <div class="kv-value" id="jobCat">-</div>
+                  </div>
+                  <div class="kv-item">
+                     <div class="kv-head">เรต/หน่วย</div>
+                     <div class="kv-value" id="jobRate">-</div>
+                  </div>
+                  <div class="kv-item">
+                     <div class="kv-head">ประเภทงาน</div>
+                     <div class="kv-value" id="jobType">-</div>
+                  </div>
+               </div>
+               <div class="divider"></div>
+               <div
+                  id="fullNotice"
+                  class="meta"
+                  style="display: none; color: #ef4444"
+               >
+                  พนักงานเต็มจำนวนแล้ว ไม่สามารถสมัครได้
+               </div>
+               <div class="form-grid" id="applyForm">
+                  <div class="field">
+                     <label>ชื่อ-นามสกุล</label
+                     ><input
+                        id="name"
+                        class="input"
+                        type="text"
+                        placeholder="เช่น สมชาย ใจดี"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>อีเมล</label
+                     ><input
+                        id="email"
+                        class="input"
+                        type="email"
+                        placeholder="เช่น student@example.com"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>เบอร์โทร</label
+                     ><input
+                        id="phone"
+                        class="input"
+                        type="tel"
+                        placeholder="เช่น 0812345678"
+                     />
+                  </div>
+                  <div class="field">
+                     <label>อายุ</label
+                     ><input
+                        id="age"
+                        class="input"
+                        type="number"
+                        min="16"
+                        max="80"
+                        placeholder="เช่น 20"
+                     />
+                  </div>
+                  <div class="field wide">
+                     <label>แนะนำตัว/เหตุผลที่สมัคร</label
+                     ><textarea
+                        id="about"
+                        class="textarea"
+                        rows="5"
+                        placeholder="เล่าประสบการณ์และแรงจูงใจ"
+                     ></textarea>
+                  </div>
+               </div>
+               <div id="err" class="meta" style="color: #ef4444"></div>
+               <div class="card-actions" style="justify-content: flex-end">
+                  <button id="submitBtn" class="btn">ยืนยันการสมัคร</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div
+            class="container"
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <div>© 2025 FlexCampus</div>
+            <div class="socials">
+               <img src="../images/logo/Facebook_icon.png" alt="facebook" />
+               <img src="../images/logo/Instagram_icon.png" alt="instagram" />
+               <img src="../images/logo/Line_icon.png" alt="line" />
+            </div>
+         </div>
+      </footer>
+      <script src="../js/apply-job.js" defer></script>
+   </body>
+</html>

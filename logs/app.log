@@ -1,0 +1,14 @@
+{"time":"2025-11-29T01:21:51.236Z","level":"INFO","message":"Server starting"}
+{"time":"2025-11-29T01:21:51.237Z","level":"INFO","message":"Connecting to MongoDB"}
+{"time":"2025-11-29T01:21:51.654Z","level":"INFO","message":"MongoDB connected (db=University)"}
+{"time":"2025-11-29T01:21:51.655Z","level":"INFO","message":"Database status: connected (University)"}
+{"time":"2025-11-29T01:21:51.661Z","level":"INFO","message":"Web available at http://localhost:5174/"}
+{"time":"2025-11-29T01:21:51.661Z","level":"INFO","message":"LAN address: http://192.168.1.114:5174/"}
+{"time":"2025-11-29T01:21:51.688Z","level":"INFO","message":"API listening on http://0.0.0.0:5174"}
+{"time":"2025-11-29T01:21:52.116Z","level":"INFO","message":"Request start GET /","meta":{"id":"8eqwug"}}
+{"time":"2025-11-29T01:21:52.120Z","level":"INFO","message":"Request end GET / status=200 duration=4ms","meta":{"id":"8eqwug"}}
+{"time":"2025-11-29T01:23:04.981Z","level":"INFO","message":"Request start GET /?ide_webview_request_time=1764379384647","meta":{"id":"ce74lt"}}
+{"time":"2025-11-29T01:23:04.983Z","level":"INFO","message":"Request end GET /?ide_webview_request_time=1764379384647 status=200 duration=2ms","meta":{"id":"ce74lt"}}
+{"time":"2025-11-29T01:23:05.030Z","level":"INFO","message":"Request start GET /@vite/client","meta":{"id":"bki9gj"}}
+{"time":"2025-11-29T01:23:05.031Z","level":"WARN","message":"Route not found GET /@vite/client"}
+{"time":"2025-11-29T01:23:05.032Z","level":"INFO","message":"Request end GET /@vite/client status=404 duration=2ms","meta":{"id":"bki9gj"}}
